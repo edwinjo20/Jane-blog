@@ -53,7 +53,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: left;
         padding: 25px;
     }
 
@@ -113,7 +112,7 @@
         flex: 2;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
     }
 
     /* Individual blog post entry */
@@ -137,7 +136,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 10px;
-            padding: 10px;
+            padding: 1px;
     }
     .post-entry .post img {
         width: 60px;
@@ -168,6 +167,8 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        width: 250px;
+        max-width: 400px;
     }
 
     /* Profile section */
@@ -235,22 +236,23 @@
 
     .advertise .ad-placeholder {
     background-color: #eee;
-    padding: 200px;
+    padding: 150px;
     text-align: center;
-    color: #999;
+    color: #6f6c6c;
     border-radius: 5px;
     }
 
     .tags .tag-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 7px;
+    margin-top: 15px;
     }
 
     .tags span {
     background-color: #333;
     color: white;
-    padding: 5px 10px;
+    padding: 11px 14px;
     border-radius: 5px;
     font-size: 0.9em;
     }
@@ -259,6 +261,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        margin-top: 15px;
     }
     
     .inspiration .inspiration-images img {
