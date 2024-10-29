@@ -1,0 +1,405 @@
+    /* variable */
+    :root {
+        --main-bg-color-white: white;
+        --main-bg-color-black: #000000;
+        --main-bg-color-gray: #dadada;
+        --main-bg-color-gray300: #bcbcbc;
+        --main-bg-color-gray700: #7e7e7e7e;
+    }
+    /* variable */
+
+    body {
+        font-family: 'Roboto Mono', Helvetica, sans-serif;
+        background-color: var(--main-bg-color-gray);
+    }
+
+    .full-container {
+        width: 100%;
+        height: 32px;
+    }
+
+    .container {
+        width: 92%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--main-bg-color-white);
+    }
+
+    .title-header {
+        text-align: center;
+        padding-top: 65px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .title-header h1 {
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--main-bg-color-black);
+    }
+
+    .title-header p {
+        font-size: 0.9rem;
+    }
+
+    .image-header {
+        background-image: url('../image/jane.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    .image-header span:nth-child(1) {
+        font-size: 35px;
+        font-weight: bold;
+        color: var(--main-bg-color-white);
+        margin-bottom: 20px;
+    }
+
+    .image-header span:nth-child(2) {
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--main-bg-color-white);
+        margin-bottom: 20px;
+    }
+
+
+    .btn-subscribe {
+        background-color: var(--main-bg-color-gray);
+        color: var(--main-bg-color-black);
+        padding: 15px;
+        font-size: 15px;
+        width: 10vh;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase; /* uppercase:Majuscule lowercase capilizer */
+        /* animation: button_subscribe 2s infinite; */  /* pour faire une animation en css avec animation lier au @keyframes */
+    }
+
+    .btn-subscribe:hover {
+        background-color: var(--main-bg-color-black);
+        color: var(--main-bg-color-white);
+    }
+
+    /* menu navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Main Content Area */
+    /* Container for main content and sidebar */
+    .main-container {
+        display: flex;
+        width: 92%;
+        max-width: 1800px; /* Set a max-width to center the layout on larger screens */
+        margin: 20px auto;
+        gap: 20px;
+        align-items: flex-start; /* Aligns sidebar and main content at the top */
+    }
+
+    /* Main content styling */
+    .main-content {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Individual blog post entry */
+    .post-entry {
+        text-align: center;
+        background-color: var(--main-bg-color-white);
+        padding: 20px;
+        border: 1px solid var(--main-bg-color-gray300);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .post-entry h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--main-bg-color-black);
+        margin-bottom: 5px;
+    }
+
+    .post-entry .post {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 1px;
+    }
+    .post-entry .post img {
+        width: 60px;
+        height: 60px;
+    }
+    .post-entry p {
+        color: var(--main-bg-color-gray700);
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+
+    /* Image styling in blog post */
+    .post-entry img {
+        width: 100%;
+        height: auto;
+        max-height: 500px; /* Controls max image height */
+        object-fit: cover;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    .post-interaction {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Sidebar styling */
+    .sidebar {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 250px;
+        max-width: 400px;
+    }
+
+    /* Profile section */
+    /* Profile Section Styling */
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--main-bg-color-black);
+        overflow: hidden;
+        border: 1px solid var(--main-bg-color-gray300);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }    
+
+    .profile img {
+        width: 600px; /* Smaller size to match the reference */
+        height: 400px;
+        margin-bottom: 0px;
+    }
+
+    .profile h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--main-bg-color-black);
+        margin-bottom: 5px;
+    }
+
+    .profile p {
+
+        color: var(--main-bg-color-white);
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding: 15px;
+    }
+    .popular-posts .post,
+    .advertise,
+    .tags,
+    .inspiration,
+    .follow-me,
+    .subscribe {
+    margin-bottom: 20px;
+    }
+    .popular-posts {
+        background-color: white;
+    }
+    .follow-me,.inspiration h2,.advertise h2,.popular-posts h2,.tags h2{
+        background-color: #000000;
+        color: white;
+        padding: 17px;
+    }
+    .popular-posts .post {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .popular-posts img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 5px;
+    }
+
+    .advertise .ad-placeholder {
+    background-color: #eee;
+    padding: 150px;
+    text-align: center;
+    color: #6f6c6c;
+    border-radius: 5px;
+    }
+
+    .tags .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 15px;
+    }
+
+    .tags span {
+    background-color: #333;
+    color: white;
+    padding: 11px 14px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    }
+
+    .inspiration .inspiration-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .inspiration .inspiration-images img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+
+    .follow-me .social-icons a {
+    margin-right: 10px;
+    }
+
+    .follow-me img {
+    width: 25px;
+    height: 25px;
+    }
+
+    .subscribe form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .subscribe input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
+    .subscribe button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    .subscribe button:hover {
+    background-color: #555;
+    }
+    /* Footer */
+    .footer {
+        width: 100%;
+        background-color: var(--main-bg-color-gray700);
+        color: var(--main-bg-color-white);
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* Button Styling */
+    .like-btn, .reply-btn {
+        background-color: var(--main-bg-color-gray);
+        color: var(--main-bg-color-black);
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 0.9rem;
+    }
+
+    .like-btn:hover, .reply-btn:hover {
+        background-color: var(--main-bg-color-black);
+        color: var(--main-bg-color-white);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .main-container {
+            flex-direction: column;
+        }
+
+        .main-content, .sidebar {
+            width: 100%;
+        }
+    }
+    .icon-bar-network {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        display: inline-block;
+        transition: all 1s;
+    }
+
+    .icon-bar-network:hover {
+        background-color: var(--main-bg-color-gray300);
+    }
+
+    .network-social a {
+        text-decoration: none;
+    }
+
+    .icon-bar-network i {
+        color: var(--main-bg-color-white);
+    }
+    /* bloc color */
+    .bg-black {background-color: var(--main-bg-color-black, black);}
+    .bg-white {background-color: var(--main-bg-color-white, black);}
+    .bg-gray {background-color: var(--main-bg-color-gray, black);}
+    .bg-gray700 {background-color: var(--main-bg-color-gray700, black);}
+
+    .text-black {color: var(--main-bg-color-black, black);}
+    .text-white {color: var(--main-bg-color-white, black);}
+    .text-gray {color: var(--main-bg-color-gray, black);}
+    /* bloc color */
+    /* bloc margin m- padding p- */
+    .m-1{margin: 1rem;}
+    .m-2{margin: 2rem;}
+    .m-3{margin: 3rem;}
+    .m-4{margin: 4rem;}
+    .m-5{margin: 5rem;}
+
+    .mt-1{margin: 1rem;}
+    .mt-2{margin: 2rem;}
+    .mt-3{margin: 3rem;}
+    .mt-4{margin: 4rem;}
+    .mt-5{margin: 5rem;}
+
+    .mb-1{margin: 1rem;}
+    .mb-2{margin: 2rem;}
+    .mb-3{margin: 3rem;}
+    .mb-4{margin: 4rem;}
+    .mb-5{margin: 5rem;}
+
+    .p-1{padding: 0.5rem;}
+    .p-2{padding: 1rem;}
+    .p-3{padding: 2rem;}
+    .p-4{padding: 3rem;}
+    .p-5{padding: 4rem;}
+    /* bloc margin padding */
+
+
+    /* animation */
+    @keyframes button_subscribe {
+        from {background-color: var(--main-bg-color-gray);}
+        to {background-color: var(--main-bg-color-black);}
+    }
